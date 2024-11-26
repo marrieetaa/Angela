@@ -1,6 +1,9 @@
 //--> Variables
+//1.Defined value with variable
 const myName = 'Mariam';
+//2.Asking for a name
 //let yourName = prompt('What is your name?');
+//3.Using concatenation, it combines the existing and received answers and combines them into one sentence.
 console.log('My name is ' + myName + ', welcome to my page ' + yourName + '!');
 
 //-- How to change variable values.
@@ -18,10 +21,23 @@ b = c;
 console.log(a,b);
 
 //--> Strings
-//Strings Concatenation
+//-- Strings Concatenation
+//1.Defined value with variable
 let message = 'Hello';
 let name  = 'Mariam';
+//2.Combines into one sentence using concatenation
 console.log(message + ' there ' + name);
-//.length priperty
+
+//-- .length priperty
+//1.Defined value with variable
 const person = 'Freddie Mercury';
+//2.Gets the number of letters using the length property
 console.log(person.length);
+
+//-- Let’s count the characters and see how many more we can write.
+//1.Asked the user to enter letters, specifying a maximum number of letters, which was determined by the slice() method, so that the maximum number was preserved.
+let post = prompt('Write what your heart desires!(Only 200 characters)').slice(0,200);
+//2.The number of letters entered has been determined.
+let charactersCount = post.length;
+//3.Shows how many letters have been entered and how many more can be entered.
+console.log('You have written ' + charactersCount + ' characters, you have ' + (200 - charactersCount) + ' characters left.');
