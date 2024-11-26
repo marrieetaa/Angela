@@ -1,6 +1,6 @@
 //--> Variables
 const myName = 'Mariam';
-let yourName = prompt('What is your name?');
+//let yourName = prompt('What is your name?');
 console.log('My name is ' + myName + ', welcome to my page ' + yourName + '!');
 
 //-- How to change variable values.
@@ -22,3 +22,6 @@ console.log(a,b);
 let message = 'Hello';
 let name  = 'Mariam';
 console.log(message + ' there ' + name);
+//.length priperty
+const person = 'Freddie Mercury';
+console.log(person.length);
