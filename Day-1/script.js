@@ -28,7 +28,7 @@ let name  = 'Mariam';
 //2.Combines into one sentence using concatenation
 console.log(message + ' there ' + name);
 
-//-- .length priperty
+//-- .length property
 //1.Defined value with variable
 const person = 'Freddie Mercury';
 //2.Gets the number of letters using the length property
@@ -41,3 +41,16 @@ let post = prompt('Write what your heart desires!(Only 200 characters)').slice(0
 let charactersCount = post.length;
 //3.Shows how many letters have been entered and how many more can be entered.
 console.log('You have written ' + charactersCount + ' characters, you have ' + (200 - charactersCount) + ' characters left.');
+
+//Uppercase and LowerCase Methods
+//1.Asking for a name
+let yourName = prompt('What is your name?');
+//2.The first letter was converted to uppercase. The slice() method extracted the first letter, which was converted to uppercase by the toUpperCase() method.
+let firstLetter = yourName.slice(0,1).toUpperCase();
+//3.Convert the remaining letters to lowercase. Use the slice() method to extract the portion of the word from the first index to the end, regardless of its length, and then convert it to lowercase using the toLowerCase() method.
+let restOfTheLetters = yourName.slice(1,yourName.length).toLowerCase();
+//4.Combines into one word using concatenation
+let concatLetters = firstLetter + restOfTheLetters;
+console.log('Hello, ' + concatLetters);
+
+
