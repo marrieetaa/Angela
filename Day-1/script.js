@@ -16,3 +16,9 @@ a = b;
 b = c; 
 // As a result, the sand bucket now contains water, and the water bucket now contains sand.
 console.log(a,b);
+
+//--> Strings
+//Strings Concatenation
+let message = 'Hello';
+let name  = 'Mariam';
+console.log(message + ' there ' + name);
