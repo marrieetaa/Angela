@@ -2,7 +2,7 @@
 //1.Defined value with variable
 const myName = 'Mariam';
 //2.Asking for a name
-//let yourName = prompt('What is your name?');
+let yourName = prompt('What is your name?');
 //3.Using concatenation, it combines the existing and received answers and combines them into one sentence.
 console.log('My name is ' + myName + ', welcome to my page ' + yourName + '!');
 
@@ -30,7 +30,7 @@ console.log(message + ' there ' + name);
 
 //-- .length property
 //1.Defined value with variable
-const person = 'Freddie Mercury';
+const person = 'Freddie';
 //2.Gets the number of letters using the length property
 console.log(person.length);
 
@@ -44,13 +44,14 @@ console.log('You have written ' + charactersCount + ' characters, you have ' + (
 
 //Uppercase and LowerCase Methods
 //1.Asking for a name
-let yourName = prompt('What is your name?');
+let yourName1 = prompt('What is your name?');
 //2.The first letter was converted to uppercase. The slice() method extracted the first letter, which was converted to uppercase by the toUpperCase() method.
-let firstLetter = yourName.slice(0,1).toUpperCase();
+let firstLetter = yourName1.slice(0,1).toUpperCase();
 //3.Convert the remaining letters to lowercase. Use the slice() method to extract the portion of the word from the first index to the end, regardless of its length, and then convert it to lowercase using the toLowerCase() method.
-let restOfTheLetters = yourName.slice(1,yourName.length).toLowerCase();
+let restOfTheLetters = yourName1.slice(1,yourName1.length).toLowerCase();
 //4.Combines into one word using concatenation
 let concatLetters = firstLetter + restOfTheLetters;
+//5.Show result.
 console.log('Hello, ' + concatLetters);
 
 
