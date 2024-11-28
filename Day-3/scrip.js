@@ -69,7 +69,7 @@ function fizzBuzz (){
 //--Who's Buying Lunch?
 let people = ['Michael','Pam','Jim','Dwight','Angela','Kevin','Oscar','Toby','Kelly','Creed','Stanley','Ryan','David','Mose','Darryl','Phyllis','Meredith'];
 function whosPaying (names){
-   let randomPersonPosition = Math.floor(Math.random() * names.length) + 1;
+   let randomPersonPosition = Math.floor(Math.random() * names.length);
    let person = names[randomPersonPosition];;
    return `${person} is going to buy lunch today!`
 
@@ -77,9 +77,7 @@ function whosPaying (names){
 
 //console.log(whosPaying(people));
 
-
-
-
+//-- 99 Bottles
 function bottlesOfBeer (){
   let counter = 99;
   while (counter >= 2){
