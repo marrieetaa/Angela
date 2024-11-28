@@ -11,4 +11,21 @@ function loveCalc (pers1,pers2){
    }
   
 }
-console.log(loveCalc('Santiago','Peralta'));
+//console.log(loveCalc('Santiago','Peralta'));
+
+function leapYear (year){
+  if(year % 4 === 0){
+     if(year % 100 === 0){
+        if(year % 400 === 0){
+           return 'Leap year'
+        }else {
+          return 'Not leap year'
+        }
+     }else{
+      return `Leap year`
+     }
+  }else{
+    return `Not  leap year!`
+  }
+}
+console.log(leapYear(1989));
