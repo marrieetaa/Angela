@@ -64,7 +64,7 @@ function fizzBuzz (){
     console.log(output);
 }
 
-fizzBuzz();
+//fizzBuzz();
 
 //--Who's Buying Lunch?
 let people = ['Michael','Pam','Jim','Dwight','Angela','Kevin','Oscar','Toby','Kelly','Creed','Stanley','Ryan','David','Mose','Darryl','Phyllis','Meredith'];
@@ -76,4 +76,23 @@ function whosPaying (names){
 }
 
 //console.log(whosPaying(people));
+
+
+
+
+function bottlesOfBeer (){
+  let counter = 99;
+  while (counter >= 2){
+    if(counter <= 2){
+      bottle = 'bottle'
+    }else if (counter > 1){
+      bottle = 'bottles'
+    }
+     console.log(`${counter} bottles of beer on the wall, ${counter} bottles of beer.take one down and pass it around, ${counter -1} ${bottle} of beer on the wall.`)
+    counter--
+  }
+   return `1 bottle of beer on the wall, 1 bottle of beer. take one down and pass it around , no more bottles of beer on the wall. \nNo more bottles of beer on the wall , no more bottles of beer.Go to the store and buy some more. 99 bottles of the beer on the wall.`
+}
+
+console.log(bottlesOfBeer());
 
