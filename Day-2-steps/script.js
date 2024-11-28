@@ -18,3 +18,9 @@ function getMilk (money,costOfBottle){
 
 //console.log(getMilk(20,1.5));
 
+//-- How many days, weeks and months we have left if we live until 90 years old.
+function lifeInWeeks (age) {
+  let yearsRemaining = 90 - age;
+  return `You have ${yearsRemaining * 365} days, ${yearsRemaining * 52} weeks, and ${yearsRemaining * 12} months left.`
+}
+console.log(lifeInWeeks(27));
