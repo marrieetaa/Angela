@@ -39,3 +39,10 @@ function lifeInWeeks (age) {
   return `You have ${yearsRemaining * 365} days, ${yearsRemaining * 52} weeks, and ${yearsRemaining * 12} months left.`
 }
 //console.log(lifeInWeeks(27));
+
+//-- BMI calculator
+function BMIcalculator (weight,height){
+   return Math.round(weight  / Math.pow(height, 2));
+}
+
+console.log(BMIcalculator(65, 1.60));
