@@ -48,3 +48,4 @@ function BMIcalculator (weight,height){
 }
 
 console.log(BMIcalculator(65, 1.60));
+
