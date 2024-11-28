@@ -46,22 +46,25 @@ function party (guest){
 
 //FizzBuzz
 let output = [];
-let number = 1;
+let count = 1;
 function fizzBuzz (){
-  if(number % 3 === 0 && number % 5 ===0){
-     output.push('FizzBuzz');
-  }else if(number % 3 === 0){
-     output.push('Fizz');
-  }else if(number % 5 === 0){
-     output.push('Buzz');
-  }else{
-    output.push(number);
-  }
-  number++
-  console.log(output);
+  while (count <= 100){
+    if(count % 3 === 0 && count % 5 ===0){
+        output.push('FizzBuzz');
+    }else if(count % 3 === 0){
+        output.push('Fizz');
+    }else if(count % 5 === 0){
+        output.push('Buzz');
+    }else{
+        output.push(count);
+      }
+      count++
+    }
+    
+    console.log(output);
 }
 
-//fizzBuzz();
+fizzBuzz();
 
 //--Who's Buying Lunch?
 let people = ['Michael','Pam','Jim','Dwight','Angela','Kevin','Oscar','Toby','Kelly','Creed','Stanley','Ryan','David','Mose','Darryl','Phyllis','Meredith'];
