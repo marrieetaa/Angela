@@ -28,4 +28,17 @@ function leapYear (year){
     return `Not  leap year!`
   }
 }
-console.log(leapYear(1989));
+//console.log(leapYear(1989));
+
+
+//--> Arrays
+let guestList = ['Michael','Pam','Jim','Dwight','Angela','Kevin','Oscar','Toby','Kelly','Creed','Stanley','Ryan','David','Mose','Darryl','Phyllis','Meredith'];
+function party (guest){
+  guest = prompt('What is your name?');
+  if(guestList.includes(guest)){
+    return 'Welcome!'
+  }else{
+    return 'Sorry, maybe next time!'
+  }
+}
+console.log(party());
