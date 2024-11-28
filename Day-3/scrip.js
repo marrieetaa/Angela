@@ -61,6 +61,16 @@ function fizzBuzz (){
   console.log(output);
 }
 
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
+//fizzBuzz();
+
+//--Who's Buying Lunch?
+let people = ['Michael','Pam','Jim','Dwight','Angela','Kevin','Oscar','Toby','Kelly','Creed','Stanley','Ryan','David','Mose','Darryl','Phyllis','Meredith'];
+function whosPaying (names){
+   let randomPersonPosition = Math.floor(Math.random() * names.length) + 1;
+   let person = names[randomPersonPosition];;
+   return `${person} is going to buy lunch today!`
+
+}
+
+//console.log(whosPaying(people));
+
