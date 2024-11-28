@@ -44,7 +44,14 @@ console.log(lifeInWeeks(27));
 // calculate risk of heart disease
 function BMIcalculator (weight,height){
   //The first parameter, which takes the body mass as an argument, must be divided by the second parameter, which is raised to the power of two using the Math.pow() function (it takes two arguments, a base and an exponent).
-   return Math.round(weight  / Math.pow(height, 2));
+   let BMI = Math.round(weight  / Math.pow(height, 2));
+   if(BMI <= 18.5){
+      return `Your BMI is ${BMI},so you are underweight.`
+   }else if(BMI > 18.5 && BMI <= 24.9){
+      return `Your BMI is ${BMI}, so you have a normal weight.`
+   }else {
+      return `Your BMI is ${BMI}, so you are overweight.`
+   }
 }
 
 console.log(BMIcalculator(65, 1.60));
