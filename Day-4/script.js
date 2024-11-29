@@ -1,19 +1,18 @@
 //Loops
 //Fibonacci Generator
-
 function fibonacciGenerator (n){
-  let arr = [];
+  let output = [];
      if(n === 1){
-       arr.push(0);
+       output.push(0);
      }else if(n === 2){
-       arr.push(0,1);
+       output.push(0,1);
      }else{
-       arr.push(0,1);
+       output.push(0,1);
     for(let i = 2; i < n; i++){
-       arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+       output.push(output[output.length - 1] + output[output.length - 2]);
      }
   }
-  return arr;
+  return output;
 }
 
 //console.log(fibonacciGenerator(5));
