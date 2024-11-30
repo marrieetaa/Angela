@@ -1,6 +1,7 @@
 body {
   color: #4ECCA3;
   font-family: cursive;
+  background-color: #393E46;
 }
 
 #refresh {
@@ -18,4 +19,8 @@ body {
 
 #player1 {
   margin: 0 70px;
+}
+
+.image {
+  display: none;
 }

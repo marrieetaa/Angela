@@ -1,6 +1,4 @@
 //Dice Challenge
-// const player1 = document.querySelector('#player1');
-
 
 const player1 = document.querySelector('#player1');
 const player2 = document.querySelector('#player2');
@@ -10,31 +8,34 @@ function randomNum1 (){
   const newOption = document.createElement('option');
   newOption.value = randomNum;
   newOption.text = `${randomNum}`;
-  player1.appendChild(newOption);
- // player2.appendChild(newOption);
+   return player1.appendChild(newOption);
 }
 
-// console.log(randomNum())
+function randomNum2(){
+  const randomNum = Math.floor(Math.random() * 6) + 1;
+  const newOption = document.createElement('option');
+  newOption.value = randomNum;
+  newOption.text = `${randomNum}`;
+  return player2.appendChild(newOption);
+}
 
-function randomNumber2
+console.log(randomNum1());
+console.log(randomNum2());
 
+// window.addEventListener('load', randomNum1);
+// window.addEventListener('load', randomNum2);
 
-window.addEventListener('load', randomNum1);
+const dice1 = document.querySelector('[alt=one]');
+const dice2 = document.querySelector('[alt=two]');
+//console.log(dice2)
 
-
-
-// const name = 2+5;
-// const news = document.createElement('p');
-// news.value = name;
-// news.text = `mari ${name}`;
-// player2.appendChild(news)
-
-// const newDiv = document.createElement('div');
-// newDiv.textContent = 'Hello, I am Mariam';
-// newDiv.style.color 
-// player2.append(newDiv);
-
-// const para = document.createElement('p');
-// para.innerText = 'Heyy heyyy';
-
-// player1.appendChild(para);
+function result (){
+  if(randomNum1 > randomNum2){
+    return 'yesss';
+  }else if(randomNum1 < randomNum2){
+    return 'whyyyyyyy'
+  }else{
+    return 'wooow'
+  }
+}
+console.log(result())
