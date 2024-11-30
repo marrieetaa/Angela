@@ -1,0 +1,21 @@
+body {
+  color: #4ECCA3;
+  font-family: cursive;
+}
+
+#refresh {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 2rem;
+}
+
+#player1 {
+  margin: 0 70px;
+}
