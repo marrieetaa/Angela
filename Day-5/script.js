@@ -10,10 +10,8 @@ const img4 = document.querySelector('[alt=four]');
 const img5 = document.querySelector('[alt=five]');
 const img6 = document.querySelector('[alt=six]');
 
-
 const randomNum1 = Math.floor(Math.random() * 6) + 1;
 const randomNum2 = Math.floor(Math.random() * 6) + 1;
-console.log(randomNum1,randomNum2)
 
 const images = {
   1: img1,
@@ -24,56 +22,32 @@ const images = {
   6: img6
 };
 
-
-
 function allAboutPlayers (){
-const imgToShow1 = images[randomNum1];
-const imgToShow2 = images[randomNum2];
-if (imgToShow1) {
-  cont1.append(imgToShow1);
-if(imgToShow2){
-  cont2.append(imgToShow2.cloneNode(true));
-}  
+      const imgToShow1 = images[randomNum1];
+      const imgToShow2 = images[randomNum2];
+      if (imgToShow1) {
+        cont1.append(imgToShow1);
+      if(imgToShow2){
+        cont2.append(imgToShow2.cloneNode(true));
+      }  
 
-window.addEventListener("load", () => {
-      imgToShow1.style.display = "block";
-      //imgToShow2.style.display = "block";
-  });
+      window.addEventListener("load", () => {
+            imgToShow1.style.display = "block";
+        });
+    }
 }
-}
 
-console.log(allAboutPlayers());
-
-
-
+allAboutPlayers();
 
 function showResult (){
-
-  function textForResult (text){
-    const head = document.querySelector('#head');
-    const p = document.createElement('p');
-    p.textContent = `${text}`;
-    head.append(p);
- }
- 
-  if(randomNum1 > randomNum2){
-    textForResult('Player 1 won !')
-  }else if(randomNum1 < randomNum2){
-    textForResult('Player 2 won !')
-  }else if(randomNum1 === randomNum2) {
-    textForResult('It\'s Tie !')
+  const head = document.querySelector('#head');
+    function addResultText (text){
+      const p = document.createElement('p');
+      p.textContent = text;
+      head.append(p);
   }
+  const resultText = randomNum1 > randomNum2 ? 'Player 1 won !' : randomNum1 < randomNum2  ? 'Player 2 won !' : 'It\'s Tie !';
+      addResultText(resultText);
 }
 
 showResult();
-
-// function allAboutPlayerTwo (){
-//   const imageToShow = images[randomNum2];
-//   if(imageToShow) {
-//     cont2.append(imageToShow.cloneNode(true));
-//     window.addEventListener('load' , () => {
-//       imageToShow.style.display = 'block';
-//     })
-//   }
-// }
-// console.log(allAboutPlayerTwo());
