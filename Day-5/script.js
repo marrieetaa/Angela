@@ -1,9 +1,5 @@
 //Dice Challenge
 
-const randomNum1 = Math.floor(Math.random() * 6) + 1;
-const randomNum2 = Math.floor(Math.random() * 6) + 1;
-console.log(randomNum1 ,randomNum2)
-
 const cont1 = document.querySelector('#cont1');
 const cont2 = document.querySelector('#cont2');
 
@@ -14,6 +10,11 @@ const img4 = document.querySelector('[alt=four]');
 const img5 = document.querySelector('[alt=five]');
 const img6 = document.querySelector('[alt=six]');
 
+
+const randomNum1 = Math.floor(Math.random() * 6) + 1;
+const randomNum2 = Math.floor(Math.random() * 6) + 1;
+console.log(randomNum1,randomNum2)
+
 const images = {
   1: img1,
   2: img2,
@@ -22,25 +23,34 @@ const images = {
   5: img5,
   6: img6
 };
-function allAboutPlayerOne (){
-const imgToShow = images[randomNum1];
-if (imgToShow) {
-  cont1.append(imgToShow);
-  window.addEventListener("load", () => {
-      imgToShow.style.display = "block";
+
+
+
+function allAboutPlayers (){
+const imgToShow1 = images[randomNum1];
+const imgToShow2 = images[randomNum2];
+if (imgToShow1) {
+  cont1.append(imgToShow1);
+if(imgToShow2){
+  cont2.append(imgToShow2.cloneNode(true));
+}  
+
+window.addEventListener("load", () => {
+      imgToShow1.style.display = "block";
+      //imgToShow2.style.display = "block";
   });
 }
 }
 
-console.log(allAboutPlayerOne());
+console.log(allAboutPlayers());
 
-function allAboutPlayerTwo (){
-  const imageToShow = images[randomNum2];
-  if(imageToShow) {
-    cont2.append(imageToShow.cloneNode(true));
-    window.addEventListener('load' , () => {
-      imageToShow.style.display = 'block';
-    })
-  }
-}
-console.log(allAboutPlayerTwo());
+// function allAboutPlayerTwo (){
+//   const imageToShow = images[randomNum2];
+//   if(imageToShow) {
+//     cont2.append(imageToShow.cloneNode(true));
+//     window.addEventListener('load' , () => {
+//       imageToShow.style.display = 'block';
+//     })
+//   }
+// }
+// console.log(allAboutPlayerTwo());
