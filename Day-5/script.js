@@ -44,6 +44,29 @@ window.addEventListener("load", () => {
 
 console.log(allAboutPlayers());
 
+
+
+
+function showResult (){
+
+  function textForResult (text){
+    const head = document.querySelector('#head');
+    const p = document.createElement('p');
+    p.textContent = `${text}`;
+    head.append(p);
+ }
+ 
+  if(randomNum1 > randomNum2){
+    textForResult('Player 1 won !')
+  }else if(randomNum1 < randomNum2){
+    textForResult('Player 2 won !')
+  }else if(randomNum1 === randomNum2) {
+    textForResult('It\'s Tie !')
+  }
+}
+
+showResult();
+
 // function allAboutPlayerTwo (){
 //   const imageToShow = images[randomNum2];
 //   if(imageToShow) {
