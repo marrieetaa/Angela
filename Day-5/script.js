@@ -47,7 +47,10 @@ function showResult (){
       head.append(p);
   }
   const resultText = randomNum1 > randomNum2 ? 'Player 1 won !' : randomNum1 < randomNum2  ? 'Player 2 won !' : 'It\'s Tie !';
-      addResultText(resultText);
+  addResultText(resultText);
 }
 
 showResult();
+
+
+//To be continued
