@@ -2,11 +2,16 @@ body {
   color: #4ECCA3;
   font-family: cursive;
   background-color: #393E46;
+  margin: 0;
+  padding: 0;
 }
 
-#refresh {
-  font-size: 7rem;
-  text-align: center;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -17,10 +22,32 @@ body {
   font-size: 2rem;
 }
 
-#player1 {
-  margin: 0 70px;
-}
-
 #image-container {
   display: none;
+}
+
+img[alt] {
+  width: 300px;
+  height: 300px;
+}
+
+#cont1 , #cont2 {
+   width: 300px;
+   height: 300px;
+}
+#cont1 {
+  margin-right: 5rem;
+}
+
+#head {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  color: rgb(143, 82, 82);
+}
+
+#refresh {
+  font-size: 7rem;
+  text-align: center;
+  color: #4ECCA3;
 }
