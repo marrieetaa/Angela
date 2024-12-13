@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding for the webpage -->
   <meta charset="UTF-8">
+  <!-- Viewport settings to ensure the page is responsive on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage that appears in the browser tab -->
   <title>Dice</title>
+  <!-- Link to external CSS file for styling the page -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="main-container">
- <div id="head">
-   <h1 id="refresh">Refresh Me</h1>
- </div>
+  <!-- Header section with a clickable title -->
+ <header>
+    <h1 id="refresh">Refresh Me</h1>
+ </header>
+   
+ <main>
+  <!-- A container for the dice images -->
+    <div id="image-container">
+      <!-- Dice images for each number (1 to 6) -->
+      <img src="dice1.png" alt="Dice showing one" id="dice1" class="dice">
+      <img src="dice2.png" alt="Dice showing two" id="dice2" class="dice">
+      <img src="dice3.png" alt="Dice showing three"  id="dice3" class="dice">
+      <img src="dice4.png" alt="Dice showing four" id="dice4" class="dice">
+      <img src="dice5.png" alt="Dice showing five" id="dice5" class="dice">
+      <img src="dice6.png" alt="Dice showing six" id="dice6" class="dice">
+    </div>
+   <!-- Section containing two players -->
+    <section class="container">
+      <!-- Player 1 information -->
+       <article class="player" id="player1">
+        <p>Player 1</p>
+       </article>
+       <!-- Player 2 information -->
+       <article class="player" id="player2">
+        <p>player 2</p>
+       </article>
+    </section>
 
- <div id="image-container">
-  <img src="dice1.png" alt="one" >
-  <img src="dice2.png" alt="two" >
-  <img src="dice3.png" alt="three"  >
-  <img src="dice4.png" alt="four" >
-  <img src="dice5.png" alt="five" >
-  <img src="dice6.png" alt="six" >
-</div>
-
-<div class='container'>
-  <div id="cont1">
-    <p>player 1</p>
-  </div>
-  <div id="cont2">
-    <p>player 2</p>
-</div>
-</div>
-</div>
+ </main>
+ <!-- Link to an external JavaScript file to add interactivity -->
 <script src="script.js"></script>
 </body>
 </html>
