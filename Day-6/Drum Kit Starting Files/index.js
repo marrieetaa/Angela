@@ -12,7 +12,12 @@ const numberOfButtons = document.querySelectorAll('.drum').length;
 for (let i = 0; i < numberOfButtons; i++){
   const buttons = document.querySelectorAll('.drum')[i];
    buttons.addEventListener('click', function (){
-    this.style.color = 'green';
+    const buttonsInnerHTML = this.innerHTML;
+     switch(buttonsInnerHTML){
+        case 'w':
+          let audio = new Audio('sounds/crash.mp3');
+          audio.play();
+     }
    })
 }
 
