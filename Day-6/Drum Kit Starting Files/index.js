@@ -1,6 +1,3 @@
-
-
-
 // buttons.forEach(button => {
 //   button.addEventListener('click',function () {
 //  alert('i got click');
@@ -13,8 +10,18 @@ for (let i = 0; i < numberOfButtons; i++){
   const buttons = document.querySelectorAll('.drum')[i];
    buttons.addEventListener('click', function (){
     const buttonsInnerHTML = this.innerHTML;
+     makesSound(buttonsInnerHTML);
+   })
+}
 
-     switch(buttonsInnerHTML){
+
+document.addEventListener('keydown',function(event){
+   makesSound(event.key);
+});
+
+function makesSound (key){
+
+     switch(key){
         case 'w':
           const crash = new Audio('sounds/crash.mp3');
           crash.play();
@@ -45,11 +52,7 @@ for (let i = 0; i < numberOfButtons; i++){
           break;
           default: console.log(buttonsInnerHTML);
      }
-   })
 }
-
-
-
 
 
 
