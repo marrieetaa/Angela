@@ -15,8 +15,13 @@ for (let i = 0; i < numberOfButtons; i++){
     const buttonsInnerHTML = this.innerHTML;
      switch(buttonsInnerHTML){
         case 'w':
-          let audio = new Audio('sounds/crash.mp3');
-          audio.play();
+          let crash = new Audio('sounds/crash.mp3');
+          crash.play();
+          break;
+        case 'a':
+         let kickBass = new Audio('sounds/kick-bass.mp3');
+          kickBass.play();
+          break;   
      }
    })
 }
