@@ -6,3 +6,8 @@ body {
   font-size: 5rem;
   color:red;
 }
+
+.colors {
+  color: #a52a2a;
+  background-color: rgb(227, 229, 237);
+}
