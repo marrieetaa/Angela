@@ -11,12 +11,14 @@ for (let i = 0; i < numberOfButtons; i++){
    buttons.addEventListener('click', function (){
     const buttonsInnerHTML = this.innerHTML;
      makesSound(buttonsInnerHTML);
+     buttonAnimation(buttonsInnerHTML);
    })
 }
 
 
 document.addEventListener('keydown',function(event){
    makesSound(event.key);
+   buttonAnimation(event.key);
 });
 
 function makesSound (key){
@@ -54,7 +56,13 @@ function makesSound (key){
      }
 }
 
-
+function buttonAnimation (currentKey){
+   const activeButton =  document.querySelector("." + currentKey);
+   activeButton.classList.add('pressed');
+   setTimeout(function(){
+     activeButton.classList.remove('pressed');
+   },200)
+}
 
 
 
