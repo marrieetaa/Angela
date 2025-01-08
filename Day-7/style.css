@@ -11,3 +11,7 @@ body {
   color: #a52a2a;
   background-color: rgb(227, 229, 237);
 }
+
+.darkred {
+  color: darkred;
+}
