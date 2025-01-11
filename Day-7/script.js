@@ -7,5 +7,9 @@ $('h1').click(function(){
 })
 
 $('button').click(function(){
-  $('h1').css('color','purple');
+  $('h1').toggleClass('purple');
+})
+
+$('body').keydown(function(event){
+     $('h1').text(event.key);
 })
