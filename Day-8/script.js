@@ -8,4 +8,7 @@ const randomNumber = nextSequence();
 const randomChosenColour = buttonColours[randomNumber];
 gamePattern.push(randomChosenColour);
 
+$('.btn').on('click', function(){
+  $(this).fadeOut().fadeIn();
+})
 
