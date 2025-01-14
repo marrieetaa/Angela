@@ -14,6 +14,14 @@ $('body').keydown(function(event){
      $('h1').text(event.key);
 })
 
-$('h1').on('mouseover', function(){
-  $('h1').toggleClass('white');
-})
+// $('h1').on('mouseover', function(){
+//   $('h1').toggleClass('white');
+// })
+
+//before(); before element outside
+//after();after element outside
+//prepand();before element inside
+//append(); after element inside
+//remove();
+//$('h1').append('<button>New</button>');
+//$('button').remove();
