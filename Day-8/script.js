@@ -28,19 +28,10 @@ $('.btn').on('click', function(){
     sound.play();
 })
 
-
-// $('.btn').on('click' , function (){
-//     let soundFile = $(this).data('sound');
-//     const sound = new Audio(soundFile);
-//     sound.play();
-// })
-
 $('.btn').on('click',nextSequence);
-// console.log(nextSequence())
 
-// $('.btn').on('click', function(){
-//     $('h1').text(`level ${level++}`);
-// })
+
+
 
 // function checkAnswer(currentLevel){
     
